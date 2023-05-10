@@ -1,0 +1,55 @@
+@import url("../../../themes/constants");
+
+@mainClass: sw-character-page;
+
+.@{mainClass} {
+  .@{mainClass}-content {
+    .@{mainClass}-header {
+      display: flex;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ccc;
+
+      .@{mainClass}-header-label {
+        margin: 0;
+      }
+
+      .@{mainClass}-header-value {
+        margin: 0;
+        margin-left: 20px;
+      }
+    }
+
+    .@{mainClass}-body {
+      margin-top: 12px;
+
+      .@{mainClass}-body-block {
+        display: flex;
+        align-items: center;
+        padding: 4px 0;
+
+        .@{mainClass}-label {
+          display: flex;
+          align-items: center;
+          width: 160px;
+          height: 30px;
+        }
+        .@{mainClass}-value {
+          display: flex;
+          align-items: center;
+          height: 30px;
+        }
+
+        .ant-typography-edit-content {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .@{mainClass}-back {
+    display: inline-block;
+    cursor: pointer;
+  }
+}

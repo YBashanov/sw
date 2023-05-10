@@ -1,0 +1,168 @@
+// простейшее брендирование (выбор темы)
+
+// стандарт
+.theme.theme-default,
+:host-context(.theme.theme-default) {
+  --buttonBgColor: #1677ff;
+  --buttonHoverColor: #4096ff;
+  --borderColor: #1677ff;
+  --borderHoverColor: #4096ff;
+  --textColor: #1677ff;
+  --textHoverColor: #69b7fd;
+  --shadowColor: #abd9ff;
+  --backgroundActiveColor: #e6f4ff;
+}
+// синий
+.theme.theme-pink,
+:host-context(.theme.theme-pink) {
+  --buttonBgColor: #991076;
+  --buttonHoverColor: #ce429e;
+  --borderColor: #991076;
+  --borderHoverColor: #ce429e;
+  --textColor: #9c0f79;
+  --textHoverColor: #db35b2;
+  --shadowColor: #ffabc3;
+  --backgroundActiveColor: #ffe6f5;
+}
+// зеленый
+.theme.theme-green,
+:host-context(.theme.theme-green) {
+  --buttonBgColor: #0e7b0c;
+  --buttonHoverColor: #349923;
+  --borderColor: #0e7b0c;
+  --borderHoverColor: #349923;
+  --textColor: #0b7f0d;
+  --textHoverColor: #48b334;
+  --shadowColor: #88cd89;
+  --backgroundActiveColor: #e6ffe9;
+}
+
+.ant-btn {
+  &.ant-btn-primary {
+    background-color: var(--buttonBgColor);
+
+    &:hover {
+      background-color: var(--buttonHoverColor);
+    }
+  }
+
+  &.ant-btn-default {
+    &:hover {
+      border-color: var(--borderHoverColor);
+      color: var(--textColor);
+    }
+  }
+}
+
+.ant-typography {
+  .ant-typography-edit {
+    .anticon-edit {
+      color: var(--textColor);
+
+      &:hover {
+        color: var(--textHoverColor);
+      }
+    }
+  }
+}
+
+.ant-typography-edit-content {
+  textarea {
+    &:hover {
+      border-color: var(--borderHoverColor);
+    }
+    &:focus {
+      border-color: var(--borderHoverColor);
+      box-shadow: 0 0 4px var(--shadowColor);
+    }
+  }
+}
+
+.ant-input-wrapper {
+  & > input.ant-input {
+    &:hover {
+      border-color: var(--borderHoverColor);
+    }
+    &:focus {
+      border-color: var(--borderHoverColor);
+      box-shadow: 0 0 4px var(--shadowColor);
+    }
+  }
+}
+
+.ant-input-number {
+  &:hover {
+    border-color: var(--borderHoverColor);
+  }
+
+  &.ant-input-number-focused {
+    border-color: var(--borderHoverColor);
+    box-shadow: 0 0 4px var(--shadowColor);
+  }
+
+  .ant-input-number-handler {
+    .anticon {
+      color: var(--textHoverColor);
+      &:hover {
+        color: var(--textHoverColor);
+      }
+    }
+  }
+}
+
+a {
+  color: var(--textColor);
+
+  &:hover {
+    color: var(--textHoverColor);
+  }
+}
+
+.ant-pagination {
+  .ant-pagination-item {
+    &.ant-pagination-item-active {
+      border-color: var(--borderColor);
+
+      a {
+        color: var(--textColor);
+      }
+
+      &:hover {
+        border-color: var(--borderHoverColor);
+
+        a {
+          color: var(--textHoverColor);
+        }
+      }
+    }
+  }
+
+  .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-link-icon {
+    color: var(--textHoverColor);
+  }
+}
+
+.ant-select.ant-select-focused {
+  border-color: var(--borderColor);
+  box-shadow: 0 0 4px var(--shadowColor);
+}
+.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover
+  .ant-select-selector {
+  border-color: var(--borderColor);
+}
+.ant-select-focused.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(
+    .ant-pagination-size-changer
+  )
+  .ant-select-selector {
+  border-color: var(--borderColor);
+}
+
+.ant-select-item.ant-select-item-option {
+  &.ant-select-item-option-selected {
+    background-color: var(--backgroundActiveColor);
+  }
+}
+
+.ant-spin-nested-loading .ant-spin.ant-spin-spinning .ant-spin .ant-spin-dot .ant-spin-dot-item {
+  background-color: var(--textColor);
+}

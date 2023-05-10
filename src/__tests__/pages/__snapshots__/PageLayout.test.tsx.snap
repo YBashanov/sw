@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing: PageLayout Snapshot correctly 1`] = `
+LoadedCheerio {
+  "0": <div
+    class="sw-page-layout"
+  >
+    <div
+      class="sw-page-layout-content"
+    >
+      <div
+        class="sw-page-layout-content-page"
+      >
+        <div
+          id="unique_key"
+        >
+          TestPage
+        </div>
+      </div>
+    </div>
+    <div
+      class="sw-page-layout-footer"
+    >
+      <div
+        class="separator"
+      >
+        <div
+          class="label"
+        >
+          Дополнительно
+        </div>
+      </div>
+      <div
+        class="theme-controls"
+      >
+        <div
+          class="label"
+        >
+          Выбор темы
+        </div>
+        <div
+          class="controls"
+        >
+          <button
+            class="ant-btn css-dev-only-do-not-override-ed5zg0 ant-btn-primary"
+            type="button"
+          >
+            <span>
+              Стандарт
+            </span>
+          </button>
+          <button
+            class="ant-btn css-dev-only-do-not-override-ed5zg0 ant-btn-default"
+            type="button"
+          >
+            <span>
+              Розовый
+            </span>
+          </button>
+          <button
+            class="ant-btn css-dev-only-do-not-override-ed5zg0 ant-btn-default"
+            type="button"
+          >
+            <span>
+              Зеленый
+            </span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="language-controls"
+      >
+        <div
+          class="label"
+        >
+          Выбор языка
+        </div>
+        <div
+          class="controls"
+        >
+          <button
+            class="ant-btn css-dev-only-do-not-override-ed5zg0 ant-btn-primary"
+            id="ru"
+            type="button"
+          >
+            <span>
+              RU
+            </span>
+          </button>
+          <button
+            class="ant-btn css-dev-only-do-not-override-ed5zg0 ant-btn-default"
+            id="en"
+            type="button"
+          >
+            <span>
+              EN
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "_root": LoadedCheerio {
+    "0": Document {
+      "children": [
+        <html>
+          <head />
+          <body />
+        </html>,
+      ],
+      "endIndex": null,
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "startIndex": null,
+      "type": "root",
+      "x-mode": "quirks",
+    },
+    "_root": [Circular],
+    "length": 1,
+    "options": {
+      "decodeEntities": true,
+      "xml": false,
+    },
+  },
+  "length": 1,
+  "options": {
+    "decodeEntities": true,
+    "xml": false,
+  },
+}
+`;

@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "json"],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "moduleNameMapper": {
+    "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+    "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js",
+    "^@/(.*)": "<rootDir>/src/$1"
+  },
+  "transform": {
+    "^.+\\.(ts|tsx|js)$": "babel-jest"
+  },
+  "testEnvironment": "jsdom",
+  "setupFiles": [
+    "<rootDir>/src/helpers/test-utils/jest-shim.js",
+    "<rootDir>/src/helpers/test-utils/jest-dom.js"
+  ],
+  "transformIgnorePatterns": ["default"],
+  "testMatch": [
+    "<rootDir>/src/__tests__/**/*.(ts|tsx|js)"
+  ]
+}

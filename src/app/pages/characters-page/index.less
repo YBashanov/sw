@@ -1,0 +1,28 @@
+@import url("../../../themes/constants");
+
+@mainClass: sw-characters-page;
+
+.@{mainClass} {
+  .@{mainClass}-filters {
+    margin-bottom: 12px;
+  }
+}
+
+.ant-drawer {
+  .ant-space {
+    display: flex;
+    margin-top: 12px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .@{mainClass}-filters-select-label {
+      display: inline-block;
+      width: 80px;
+    }
+    .@{mainClass}-filters-select {
+      width: 150px;
+    }
+  }
+}

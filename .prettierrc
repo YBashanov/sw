@@ -1,0 +1,24 @@
+{
+  "useTabs": false,
+  "printWidth": 120,
+  "tabWidth": 4,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSameLine": false,
+  "semi": true,
+  "parser": "typescript",
+  "arrowParens": "avoid",
+  "proseWrap": "always",
+  "quoteProps": "preserve",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "*.less",
+      "options": {
+        "singleQuote": false,
+        "tabWidth": 2,
+        "parser": "less"
+      }
+    }
+  ]
+}

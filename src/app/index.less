@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.app {
+  margin: 20px;
+
+  /* Разделитель */
+  .separator {
+    margin-top: 0;
+  }
+
+  /* дополнительные кнопки - выбор языка и темы */
+  .theme-controls,
+  .language-controls {
+    margin-top: 10px;
+
+    .label {
+      font-size: 12px;
+      padding: 4px 0;
+    }
+    .controls button {
+      flex-grow: 0;
+
+      &:not(:first-child) {
+        margin-left: 12px;
+      }
+
+      &.button .html-element {
+        width: 90px;
+      }
+    }
+  }
+}
